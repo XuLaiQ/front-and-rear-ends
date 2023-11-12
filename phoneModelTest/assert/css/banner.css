@@ -1,0 +1,59 @@
+.slideshow-container {
+    position: relative;
+    width: 846px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    z-index: 0;
+}
+
+.prev{
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    color: black;
+    border: none;
+    background-color: transparent;
+
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 1;
+
+    top: 35%;
+    left: 0;
+
+
+}
+
+.next{
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 120px;
+    color: black;
+    border: none;
+    background-color: transparent;
+
+    top: 35%;
+    right: 0;
+}
+
+.prev:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.next:hover{
+    background-color: rgba(255,255,255,0.5);
+}
+.dots{
+    position: absolute;
+    background-color: rgba(207,207,207,0.2);
+    border: none;
+
+    bottom: 20px;
+    left: 40%;
+}

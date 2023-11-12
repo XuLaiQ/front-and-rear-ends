@@ -1,0 +1,22 @@
+#powerOnImage {
+    display: none;
+}
+#powerOffImage {
+    display: block;
+}
+.box{
+    display: flex;
+    width: 800px;
+    height: 250px;
+}
+.img-box{
+    width: 91px;
+    height: 190px;
+}
+.button_box{
+    width: 91px;
+    height: 190px;
+}
+button{
+    margin-top: 185%;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .slideshow-container {
+            position: relative;
+        }
+
+        .mySlides {
+            display: none;
+            z-index: 0;
+        }
+
+        .prev{
+            cursor: pointer;
+            position: absolute;
+            width: 50px;
+            height: 70px;
+            color: white;
+            border: none;
+
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            z-index: 1;
+
+            top: 40%;
+            left: 0;
+
+
+        }
+
+        .next{
+            cursor: pointer;
+            position: absolute;
+            width: 50px;
+            height: 70px;
+            color: white;
+            border: none;
+
+            top: 40%;
+            right: 0;
+        }
+
+        .prev:hover{
+            background-color: rgba(255,255,0,0.2);
+        }
+
+        .next:hover{
+            background-color: rgba(255,255,0,0.2);
+        }
+        .dots{
+            position: absolute;
+            background-color: rgba(207,207,207,0.2);
+            border: none;
+
+            bottom: 20px;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="assert/dog1.jpg" style="width:800px;height: 600px">
+    </div>
+
+    <div class="mySlides">
+        <img src="assert/dog2.jpg" style="width:800px;height: 600px">
+    </div>
+
+    <div class="mySlides">
+        <img src="assert/dog3.jpg" style="width:800px;height: 600px">
+    </div>
+
+
+    <button class="prev" onclick="plusSlides(-1)">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </button>
+    <button class="next" onclick="plusSlides(1)">
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </button>
+    <button class="dots">
+        <i class="fa fa-genderless" aria-hidden="true"></i>
+    </button>
+
+</div>
+</body>
+<script>
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        console.log(slides.length)
+        console.log(n)
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // function auto_show(){
+    //     showSlides(slideIndex += 1)
+    // }
+    // setInterval(auto_show, 5000);
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+</script>
+</html>

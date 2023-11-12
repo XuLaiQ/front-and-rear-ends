@@ -1,0 +1,55 @@
+.img1{
+    float: left;
+}
+.big{
+    position: absolute;
+    margin-left: 25%;
+    min-width: 800px;
+}
+
+.search{
+    margin-bottom: 15px;
+}
+
+.search_label{
+    border: 5px solid rgb(255,84,0);
+    color: white;
+    background-color: rgb(255,84,0);
+}
+
+.search_input{
+    border: 4px solid rgb(255,84,0);
+    width: 500px;
+    height: 35px;
+    float: left;
+}
+.search_button{
+    cursor: pointer;
+    border: none;
+    color: white;
+    background-color: rgb(255,84,0);
+    width: 70px;
+    height: 45px;
+    margin: 0;
+    /*float: left;*/
+}
+.nave_f a{
+    text-decoration: none;
+    color: rgb(197,197,197);
+    width: 60px;
+}
+
+.more_button{
+    cursor: pointer;
+    margin-right: 100px;
+    float: right;
+    border: none;
+    color: white;
+    background-color: rgb(255,84,0);
+    width: 50px;
+    height: 30px;
+}
+a:hover{
+    background-color: lightblue;
+    color: #0c1622;
+}

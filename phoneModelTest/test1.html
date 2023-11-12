@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>开关机</title>
+    <style>
+        .dropdown-content{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button class="dropdown-btn">Dropdown</button>
+<br>
+<div class="dropdown-content">
+    <li href="#">Link 1</li>
+    <li href="#">Link 2</li>
+    <li href="#">Link 3</li>
+</div>
+
+<img id="img1" src="assert/0.jpg" onmouseover="document.getElementById('img1').src='assert/1.jpg'"
+     onmouseout="document.getElementById('img1').src='assert/0.jpg'"/>
+
+
+
+</body>
+<script>
+
+    // let dropdownBtn = document.getElementsByClassName("dropdown-btn")[0];
+    // let dropdownContent = document.getElementsByClassName("dropdown-content")[0];
+    const dropdownBtn = document.querySelector('.dropdown-btn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    dropdownBtn.addEventListener('mouseenter',() => {
+        dropdownContent.style.display = 'block';
+    })
+
+    dropdownBtn.addEventListener('mouseleave', () => {
+        dropdownContent.style.display = 'none';
+    });
+
+</script>
+</html>
